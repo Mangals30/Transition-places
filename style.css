@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+:root {
+  --bg-black : #333;
+  --bg-white : #fff;
+  --bg-light : #f4f4f4;
+  --btn-dark : #08186b;
+  --animate-speed : 2s;
+  --animate-delay:1s
+}
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+  background: var(--bg-black);
+  color: var(--bg-white);
+  font-family: 'Mate SC', serif;
+  overflow: hidden;
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+.page h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+#finland h1 {
+  transform: translateY(-30rem);
+  animation: heading var(--animate-speed) forwards ease-in;
+}
+@keyframes heading {
+  to {
+    transform: translateY(0);
+  }
+}
+
+.page p {
+  font-size: 1.5rem;
+  padding: 0 5rem;
+}
+#finland p {
+  transform: translateX(-100rem);
+  animation: para var(--animate-speed) forwards var(--animate-delay) ease-in;
+}
+@keyframes para {
+ to {
+   transform: translateX(0);
+ }  
+}
+
+.btn-dark {
+  display: inline-block;
+  font-size: 1.2rem;
+  color: var(--bg-white);
+  background: var(--btn-dark);
+  padding: 0.8rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 0.5rem;
+  transition: all 1s ease-in-out;
+}
+.btn-dark:hover,.btn-light {
+  color: var(--btn-dark);
+  background: var(--bg-light);
+}
+.btn-light:hover {
+  color: var(--bg-white);
+  background: var(--btn-dark);
+}
+.page  {
+  position: relative;
+}
+#finland::before{
+  background: url('./images/finland.jpg') no-repeat center center/cover;
+}
+#suomenlinna::before {
+  background: url('./images/suomenlinna.jpg') no-repeat center center/cover;
+}
+#cathedral::before {
+  background: url('./images/cathedral.jpg') no-repeat center center/cover;
+}
+#museum::before {
+  background: url('./images/museum.jpg') no-repeat center center/cover;
+}
+#temppeli::before {
+  background: url('./images/temppeliaukio.jpg') no-repeat center center/cover;
+}
+#market::before {
+  background: url('./images/marketsquare.jpg') no-repeat center center/cover;
+}
+#levi::before {
+  background: url('./images/levi.jpg') no-repeat center center/cover;
+}
+#ateneum::before {
+  background: url('./images/atenum.jpg') no-repeat center center/cover;
+}
+#uspenksi::before {
+  background: url('./images/uspenksi.jpg') no-repeat center center/cover;
+} 
+#sibelius::before{
+  background: url('./images/sibelius.jpg') no-repeat center center/cover;
+}
+#paa::before{
+  background: url('./images/paa.jpg') no-repeat center center/cover;
+}
+#linnanmaki::before{
+  background: url('./images/linnamaki.jpg') no-repeat center center/cover;
+}
+#national::before{
+  background: url('./images/nationalmeuseum.jpg') no-repeat center center/cover;
+}
+#yllas::before{
+  background: url('./images/yllas.jpg') no-repeat center center/cover;
+}
+#santa::before{
+  background: url('./images/santaclause.jpg') no-repeat center center/cover;
+}
+#ruka::before{
+  background: url('./images/rukatunturi.jpg') no-repeat center center/cover;
+}
+#amos::before{
+  background: url('./images/amos.jpg') no-repeat center center/cover;
+}
+#senate::before{
+  background: url('./images/senate.jpg') no-repeat center center/cover;
+}
+#nuuksio::before{
+  background: url('./images/nuksio.jpg') no-repeat center center/cover;
+}
+.page::before {
+  content: '';
+  position: absolute;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+    /*Smart phones ==> max-width:500px*/
+    @media (max-width:768px) {
+
+      .page h1 {
+        padding: 0 2rem;
+        font-size: 2rem;
+        line-height: 1;
+        margin-bottom: 0.5rem;
+      }
+      .page p {
+        font-size: 1rem;
+        padding: 0 2rem;
+      }
+      .btn-dark {
+        font-size: 1rem;
+        padding: 0.6rem 0.8rem;
+        margin-right: 0.2rem;
+
+      }
+    }
+
