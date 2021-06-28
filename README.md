@@ -4,4 +4,4 @@
 
 A simple HTML page using transition
 
-[Transition](https://mkris-chatapp.herokuapp.com/)
+[Transition](https://youthful-saha-6a813c.netlify.app)
